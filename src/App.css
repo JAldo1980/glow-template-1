@@ -1,21 +1,149 @@
 /* COMPONENT STYLING */
+/* MOBILE FIRST */
+
+:root {
+  --highlight-text: #e85b44;
+  --quote-color: white;
+}
+
+/* NAV SECTION */
 
 .nav-container {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  gap: 0.5em;
+  text-transform: capitalize;
 }
 
 .nav-items {
   display: flex;
   gap: 1em;
+  cursor: pointer;
+}
+
+.nav-items h4 {
+  text-transform: uppercase;
 }
 
 .social-items {
   display: flex;
+  align-items: center;
   gap: 1em;
 }
 
 .logo-img {
   width: 150px;
 }
+
+/* HERO SECTION */
+
+.hero-container {
+  margin-top: 2em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1.5em;
+}
+
+.headline-name {
+  text-align: start;
+  font-size: 3rem;
+  line-height: 0.9;
+}
+
+.subheader {
+  color: var(--highlight-text);
+}
+
+.hero-img {
+  width: 120%; /* Increase the width of the image to make it overflow the container */
+  margin-left: 10%; /* Center the overflowed content by adjusting margins */
+  margin-bottom: -5%;
+}
+
+/* ENDORSMENT SECTION */
+
+.endorsement-container {
+  margin-top: 1em;
+}
+
+.endorsement-container h2 {
+  font-size: 2.5rem;
+  color: var(--quote-color);
+}
+
+.endorsement-card {
+  margin-top: 1em;
+  padding: 0.5em;
+  width: 100%;
+  display: flex;
+  gap: 2em;
+  /* background-color: var(--highlight-text); */
+  border-radius: 10px;
+}
+
+.quote h4 {
+  color: var(--quote-color);
+}
+
+.endorser-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.endorser-details {
+  margin-top: 0.5em;
+  font-size: 0.8rem;
+}
+
+.endorser-image {
+  border-radius: 50%;
+  width: 200px;
+}
+
+/* BENEFITS SECTION */
+
+.benefits-container h2 {
+  font-size: 2.5rem;
+}
+
+.benefits-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.benefit-card {
+  margin-top: 1em;
+}
+
+/* ABOUT CONTAINER */
+
+.about-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.about-container h2 {
+  font-size: 2.5rem;
+  color: var(--quote-color);
+}
+
+.about-container p {
+  color: var(--quote-color);
+}
+
+.about-text-container {
+  margin-top: 1em;
+}
+
+/* ************ */
+/* ************ */
+/* BREAK POINTS */
+
+/* LAPTOP */
+
+/* DESKTOP */
