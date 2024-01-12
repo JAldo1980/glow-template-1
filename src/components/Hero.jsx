@@ -6,7 +6,7 @@ function Hero() {
       <div className="hero-container">
         <div className="headline-name">
           <h1>
-            Joe <span>Bloggs</span>
+            Adrian <span>Foster</span>
           </h1>
         </div>
         <div className="subheader">

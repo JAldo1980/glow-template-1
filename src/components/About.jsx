@@ -47,8 +47,8 @@ function About() {
         </div>
 
         <div className="benefit-links">
-          <a href="">Link One</a>
-          <a href="">Link Two</a>
+          <a href="">My Results</a>
+          <a href="">Frequently Asked Questions</a>
         </div>
       </div>
     </>
