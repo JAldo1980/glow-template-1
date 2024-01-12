@@ -3,6 +3,7 @@
 
 :root {
   --highlight-text: #e85b44;
+  --bg-color: #efece4;
   --quote-color: white;
 }
 
@@ -138,6 +139,69 @@
 
 .about-text-container {
   margin-top: 1em;
+}
+
+.benefit-links {
+  display: flex;
+  gap: 2em;
+}
+
+/* FAQ section */
+
+.faq-container h2 {
+  font-size: 2.5rem;
+}
+
+/* Contact section */
+
+.contact-container h2 {
+  font-size: 2.5rem;
+}
+
+.form-style {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+}
+
+input[type="text"],
+[type="email"] {
+  margin-top: 0.5em;
+  padding: 0.5em;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 1px solid black;
+  background-color: var(--bg-color);
+  cursor: pointer;
+}
+
+textarea {
+  margin-top: 0.5em;
+  padding: 0.5em;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 1px solid black;
+  background-color: var(--bg-color);
+  cursor: pointer;
+}
+
+.label-style {
+  font-weight: bold;
+}
+
+.submit-btn {
+  padding: 0.5em;
+  border: none;
+  background-color: var(--highlight-text);
+  color: var(--quote-color);
+  font-weight: bold;
+  cursor: pointer;
 }
 
 /* ************ */

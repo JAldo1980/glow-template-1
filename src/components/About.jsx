@@ -45,6 +45,11 @@ function About() {
             mark on the tech industry.
           </p>
         </div>
+
+        <div className="benefit-links">
+          <a href="">Link One</a>
+          <a href="">Link Two</a>
+        </div>
       </div>
     </>
   );
