@@ -5,7 +5,9 @@ function Hero() {
     <>
       <div className="hero-container">
         <div className="headline-name">
-          <h1>Adrian Foster</h1>
+          <h1>
+            Adrian <span>Foster</span>
+          </h1>
         </div>
         <div className="subheader">
           <h3>
@@ -13,6 +15,7 @@ function Hero() {
             Passionate about building diverse, high-performing teams.
           </h3>
         </div>
+
         <div className="hero-image-container">
           <img
             src="/src/images/hero-img.png"

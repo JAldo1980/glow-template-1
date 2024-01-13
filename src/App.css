@@ -56,15 +56,23 @@
 }
 
 .headline-name {
-  text-align: start;
-  font-size: 3rem;
+  font-size: 3.5rem;
   line-height: 0.8;
+  z-index: 2000;
+}
+
+.headline-name h1 span {
+  display: block;
 }
 
 .subheader {
   color: var(--highlight-text);
   max-width: 600px;
   font-weight: 500;
+}
+
+.hero-image-container {
+  z-index: 1000;
 }
 
 .hero-img {
@@ -194,13 +202,20 @@
   margin-top: 1em;
 }
 
+.benefit-card h3 {
+  font-size: 1.2rem;
+}
+.benefit-card p {
+  margin-top: 0.5em;
+}
+
 /* *****************/
 /* ABOUT CONTAINER */
 /* *****************/
 
 .about-container {
   max-width: 1140px;
-  margin: 1em auto;
+  margin: 1em auto 2em auto;
   display: flex;
   flex-direction: column;
   gap: 1em;
@@ -408,15 +423,77 @@ textarea {
 }
 
 /* ************ */
+/* ************ */
 /* BREAK POINTS */
 /* ************ */
+/* ************ */
+
+/* HERO ADJUSTMENT */
+@media (min-width: 598px) and (max-width: 767px) {
+  /* HERO SECTION */
+
+  .hero-container {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .subheader {
+    max-width: 370px;
+  }
+
+  .hero-image-container {
+    position: absolute;
+    bottom: 0;
+    right: 00;
+    margin-bottom: 20px; /* Adjust as needed to provide some space from the bottom */
+    margin-right: 20px; /* Adjust as needed to provide some space from the right */
+    z-index: 1000;
+  }
+
+  .hero-img {
+    width: 80%; /* Increase the width of the image to make it overflow the container */
+    margin-left: 55%; /* Center the overflowed content by adjusting margins */
+    margin-bottom: -10%;
+    z-index: 1000;
+  }
+}
 
 /* SMALL TABLETS */
 @media (min-width: 768px) and (max-width: 991px) {
-  /* NAV */
-  .headline-name h1 {
-    text-align: left;
+  /* HERO SECTION */
+
+  .headline-name {
+    font-size: 4rem;
   }
+
+  .hero-container {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .subheader {
+    text-align: left;
+    max-width: 450px;
+  }
+
+  .hero-image-container {
+    position: absolute;
+    bottom: 0;
+    right: 00;
+    margin-bottom: 20px; /* Adjust as needed to provide some space from the bottom */
+    margin-right: 20px; /* Adjust as needed to provide some space from the right */
+    z-index: 1000;
+  }
+
+  .hero-img {
+    width: 80%; /* Increase the width of the image to make it overflow the container */
+    margin-left: 40%; /* Center the overflowed content by adjusting margins */
+    margin-bottom: -10%;
+    z-index: 1000;
+  }
+
   /* ABOUT SECTION */
   .about-container h2 {
     font-size: 3rem;
@@ -468,12 +545,33 @@ textarea {
 /* LARGE TABLETS / LAPTOPS */
 @media (min-width: 992px) and (max-width: 1199px) {
   /* HERO SECTION */
+
   .headline-name {
-    font-size: 4rem;
+    font-size: 4.5rem;
   }
-  .subheader {
-    font-size: 1.3rem;
+
+  .hero-container {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
   }
+
+  .hero-image-container {
+    position: absolute;
+    bottom: 0;
+    right: 00;
+    margin-bottom: 20px; /* Adjust as needed to provide some space from the bottom */
+    margin-right: 20px; /* Adjust as needed to provide some space from the right */
+    z-index: 1000;
+  }
+
+  .hero-img {
+    width: 80%; /* Increase the width of the image to make it overflow the container */
+    margin-left: 45%; /* Center the overflowed content by adjusting margins */
+    margin-bottom: -10%;
+    z-index: 1000;
+  }
+
   /* ABOUT SECTION */
   .about-container h2 {
     font-size: 3rem;
@@ -538,6 +636,30 @@ textarea {
 
 /* DESKTOPS */
 @media (min-width: 1200px) and (max-width: 1919px) {
+  /* HERO SECTION */
+
+  .hero-container {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .hero-image-container {
+    position: absolute;
+    bottom: 0;
+    right: 00;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    z-index: 1000;
+  }
+
+  .hero-img {
+    width: 130%;
+    margin-left: 25%;
+    margin-bottom: -10%;
+    z-index: 1000;
+  }
+
   /* NAV SECTION */
   .nav-container {
     flex-direction: row;
@@ -619,6 +741,29 @@ textarea {
 
 /* EXTRA LARGE SCREENS */
 @media (min-width: 1920px) {
+  /* HERO SECTION */
+
+  .hero-container {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .hero-image-container {
+    position: absolute;
+    bottom: 0;
+    right: 00;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    z-index: 1000;
+  }
+
+  .hero-img {
+    width: 130%;
+    margin-left: 85%;
+    margin-bottom: -10%;
+    z-index: 1000;
+  }
   /* NAV SECTION */
   .nav-container {
     flex-direction: row;
