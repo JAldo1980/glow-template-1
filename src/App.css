@@ -44,8 +44,9 @@
 /* ************ */
 
 .hero-container {
-  margin-top: 2em;
-
+  max-width: 1140px;
+  margin: 2em auto 0 auto;
+  padding-top: 2em;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -57,13 +58,13 @@
 .headline-name {
   text-align: start;
   font-size: 3rem;
-  line-height: 0.9;
+  line-height: 0.8;
 }
 
 .subheader {
   color: var(--highlight-text);
-
   max-width: 600px;
+  font-weight: 500;
 }
 
 .hero-img {
@@ -77,7 +78,9 @@
 /* ****************** */
 
 .endorsement-container {
-  margin-top: 1em;
+  max-width: 1140px;
+  margin: 0 auto;
+  padding-top: 1em;
 }
 
 .endorsement-container h2 {
@@ -111,12 +114,17 @@
 
 .endorser-image {
   border-radius: 50%;
-  width: 200px;
+  max-width: 100px;
 }
 
 /* ******** */
 /* RESULTS */
 /* ******* */
+
+.results-container {
+  max-width: 1140px;
+  margin: 0 auto;
+}
 
 .results-headline {
   font-size: 2.5rem;
@@ -124,6 +132,8 @@
 
 .result-detail {
   margin-top: 1em;
+  background-color: white;
+  padding: 0.5em;
 }
 
 /* **************** */
@@ -135,6 +145,8 @@
 }
 
 .benefits-container {
+  max-width: 1140px;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
 }
@@ -148,9 +160,17 @@
 /* *****************/
 
 .about-container {
+  max-width: 1140px;
+  margin: 1em auto;
   display: flex;
   flex-direction: column;
   gap: 1em;
+}
+
+.about-inner-container {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 2em;
 }
 
 .about-container h2 {
@@ -160,10 +180,24 @@
 
 .about-container p {
   color: var(--quote-color);
+  font-weight: 500;
 }
 
 .about-text-container {
   margin-top: 1em;
+}
+
+.about-image-container {
+  margin-top: 1em;
+  margin-bottom: 1em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-image {
+  transform: rotate(5deg);
+  border: 6px solid #efece4;
 }
 
 .benefit-links {
@@ -171,9 +205,27 @@
   gap: 2em;
 }
 
+.benefit-links a {
+  font-weight: 500;
+  text-decoration: none;
+  background-color: white;
+  padding: 0.5em 0.8em;
+  border-radius: 50px;
+  color: black;
+  cursor: pointer;
+  -webkit-box-shadow: 0px 8px 21px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 8px 21px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 8px 21px 0px rgba(0, 0, 0, 0.75);
+}
+
 /* *********** */
 /* FAQ section */
 /* *********** */
+
+.faq-container {
+  max-width: 1140px;
+  margin: 0 auto;
+}
 
 .faq-container h2 {
   font-size: 2.5rem;
@@ -185,6 +237,7 @@
 }
 
 .accordion-header {
+  margin-top: 1em;
   cursor: pointer;
   display: flex;
   justify-content: space-between;
@@ -195,7 +248,6 @@
 .accordion-content {
   padding: 10px;
   background-color: #fff;
-  border: 1px solid #ddd;
 }
 
 /* *****************/
@@ -203,7 +255,9 @@
 /* *************** */
 
 .contact-container {
-  margin-top: 2em;
+  max-width: 1140px;
+  margin: 0 auto;
+  padding-top: 2em;
 }
 
 .contact-container h2 {
@@ -263,9 +317,20 @@ textarea {
 /* ****** */
 
 .footer-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   text-align: center;
   font-size: 0.8rem;
   color: white;
+}
+
+.footer-socials {
+  margin-top: 0.5em;
+  display: flex;
+  flex-direction: row;
+  gap: 1em;
 }
 
 /* ************ */
@@ -275,20 +340,284 @@ textarea {
 /* SMALL TABLETS */
 @media (min-width: 768px) and (max-width: 991px) {
   /* NAV */
-
   .headline-name h1 {
     text-align: left;
+  }
+  /* ABOUT SECTION */
+  .about-container h2 {
+    font-size: 3rem;
+  }
+  .about-container p {
+    font-size: 1.2rem;
+  }
+  .about-inner-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  /* RESULTS SECTION */
+
+  .results-inner-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1em;
+  }
+
+  .results-headline {
+    font-size: 3rem;
+  }
+  .result-detail h4 {
+    font-size: 1.1rem;
+  }
+  /* ENDORSMENT SECTION */
+  .endorsement-container h2 {
+    font-size: 3rem;
+  }
+  .quote h4 {
+    font-size: 1.2rem;
+  }
+  /* FAQ SECTION */
+  .faq-container h2 {
+    font-size: 3rem;
+  }
+  .accordion-header h3 {
+    font-size: 1.2rem;
+  }
+  /* CONTACT SECTION */
+  .contact-container H2 {
+    font-size: 3rem;
+    padding-bottom: 0.5em;
+  }
+  .label-style {
+    font-size: 1.2rem;
   }
 }
 
 /* LARGE TABLETS / LAPTOPS */
 @media (min-width: 992px) and (max-width: 1199px) {
+  /* HERO SECTION */
+  .headline-name {
+    font-size: 4rem;
+  }
+  .subheader {
+    font-size: 1.3rem;
+  }
+  /* ABOUT SECTION */
+  .about-container h2 {
+    font-size: 3rem;
+  }
+  .about-container p {
+    font-size: 1.3rem;
+  }
+  .about-inner-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  /* BENEFITS SECTION */
+  .benefits-container h2 {
+    font-size: 3rem;
+  }
+  .benefits-container P {
+    font-size: 1.3rem;
+  }
+  .benefit-links a {
+    font-size: 1.3rem;
+  }
+  /* RESULTS SECTION */
+  .results-inner-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1em;
+  }
+  .results-headline {
+    font-size: 3rem;
+  }
+  .result-detail h4 {
+    font-size: 1.2rem;
+  }
+  /* ENDORSMENT SECTION */
+  .endorsement-container h2 {
+    font-size: 3rem;
+  }
+  .quote h4 {
+    font-size: 1.3rem;
+  }
+  .endorser-details h5 {
+    font-size: 1.1rem;
+  }
+  /* FAQ SECTION */
+  .faq-container h2 {
+    font-size: 3rem;
+  }
+  .accordion-header h3 {
+    font-size: 1.3rem;
+  }
+  .accordion-content {
+    font-size: 1.3rem;
+  }
+  /* CONTACT SECTION */
+  .contact-container H2 {
+    font-size: 3rem;
+    padding-bottom: 0.5em;
+  }
+  .label-style {
+    font-size: 1.3rem;
+  }
 }
 
 /* DESKTOPS */
 @media (min-width: 1200px) and (max-width: 1919px) {
+  /* NAV SECTION */
+  .nav-container {
+    flex-direction: row;
+    align-items: center;
+    gap: 1em;
+    padding: 0em 1em;
+  }
+
+  /* HERO SECTION */
+  .headline-name {
+    font-size: 8rem;
+    text-align: center;
+  }
+  .subheader {
+    font-size: 1.3rem;
+  }
+  /* ABOUT SECTION */
+  .about-container h2 {
+    font-size: 3rem;
+  }
+  .about-container p {
+    font-size: 1.3rem;
+  }
+  .about-inner-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  /* BENEFITS SECTION */
+  .benefits-container h2 {
+    font-size: 3rem;
+  }
+  .benefits-container P {
+    font-size: 1.3rem;
+  }
+  .benefit-links a {
+    font-size: 1.3rem;
+  }
+  /* RESULTS SECTION */
+
+  .results-inner-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1em;
+  }
+  .results-headline {
+    font-size: 3rem;
+  }
+  .result-detail h4 {
+    font-size: 1.3rem;
+  }
+  /* ENDORSMENT SECTION */
+  .endorsement-container h2 {
+    font-size: 3rem;
+  }
+  .quote h4 {
+    font-size: 1.3rem;
+  }
+  .endorser-details h5 {
+    font-size: 1.1rem;
+  }
+  /* FAQ SECTION */
+  .faq-container h2 {
+    font-size: 3rem;
+  }
+  .accordion-header h3 {
+    font-size: 1.3rem;
+  }
+  .accordion-content {
+    font-size: 1.3rem;
+  }
+  /* CONTACT SECTION */
+  .contact-container H2 {
+    font-size: 3rem;
+    padding-bottom: 0.5em;
+  }
+  .label-style {
+    font-size: 1.3rem;
+  }
 }
 
 /* EXTRA LARGE SCREENS */
 @media (min-width: 1920px) {
+  /* NAV SECTION */
+  .nav-container {
+    flex-direction: row;
+    align-items: center;
+    gap: 1em;
+    padding: 0em 1em;
+  }
+  /* HERO SECTION */
+  .headline-name {
+    font-size: 8rem;
+    text-align: center;
+  }
+  .subheader {
+    font-size: 1.3rem;
+  }
+  /* ABOUT SECTION */
+  .about-container h2 {
+    font-size: 3rem;
+  }
+  .about-container p {
+    font-size: 1.3rem;
+  }
+  .about-inner-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  /* BENEFITS SECTION */
+  .benefits-container h2 {
+    font-size: 3rem;
+  }
+  .benefits-container P {
+    font-size: 1.3rem;
+  }
+  .benefit-links a {
+    font-size: 1.3rem;
+  }
+  /* RESULTS SECTION */
+  .results-inner-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1em;
+  }
+  .results-headline {
+    font-size: 3rem;
+  }
+  .result-detail h4 {
+    font-size: 1.3rem;
+  }
+  /* ENDORSMENT SECTION */
+  .endorsement-container h2 {
+    font-size: 3rem;
+  }
+  .quote h4 {
+    font-size: 1.3rem;
+  }
+  .endorser-details h5 {
+    font-size: 1.1rem;
+  }
+  /* FAQ SECTION */
+  .faq-container h2 {
+    font-size: 3rem;
+  }
+  .accordion-header h3 {
+    font-size: 1.3rem;
+  }
+  .accordion-content {
+    font-size: 1.3rem;
+  }
+  /* CONTACT SECTION */
+  .contact-container H2 {
+    font-size: 3rem;
+    padding-bottom: 0.5em;
+  }
+  .label-style {
+    font-size: 1.3rem;
+  }
 }

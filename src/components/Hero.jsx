@@ -5,9 +5,7 @@ function Hero() {
     <>
       <div className="hero-container">
         <div className="headline-name">
-          <h1>
-            Adrian <span>Foster</span>
-          </h1>
+          <h1>Adrian Foster</h1>
         </div>
         <div className="subheader">
           <h3>
