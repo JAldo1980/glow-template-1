@@ -7,14 +7,14 @@ function Footer() {
         <div className="footer-socials">
           <a href="https://twitter.com/">
             <img
-              src="public/11244080_x_twitter_elon musk_twitter new logo_icon.svg"
+              src="11244080_x_twitter_elon musk_twitter new logo_icon.svg"
               alt="social-media-icon"
               className="social-icon"
             />
           </a>
           <a href="https://www.linkedin.com/">
             <img
-              src="/public/1820468_brand_linkedin_logo_network_social_icon.svg"
+              src="1820468_brand_linkedin_logo_network_social_icon.svg"
               alt="social-media-icon"
               className="social-icon"
             />

@@ -17,15 +17,7 @@ function Hero() {
         </div>
 
         <div className="hero-image-container">
-          <img
-<<<<<<< HEAD
-            src="/public/hero-img-new.png"
-=======
-            src="src/images/hero-img-new.png"
->>>>>>> origin/main
-            className="hero-img"
-            alt="hero-image"
-          />
+          <img src="hero-img-new.png" className="hero-img" alt="hero-image" />
         </div>
       </div>
     </>

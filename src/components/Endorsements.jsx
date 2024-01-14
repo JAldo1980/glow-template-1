@@ -20,7 +20,7 @@ function Endorsments() {
           </div>
           <div className="endorser-container">
             <img
-              src="/public/endorser-1-img.jpeg"
+              src="endorser-1-img.jpeg"
               className="endorser-image"
               alt="endorser-image"
             />
@@ -30,7 +30,7 @@ function Endorsments() {
         <div className="endorsement-card">
           <div className="endorser-container">
             <img
-              src="/public/endorser-2-img.png"
+              src="endorser-2-img.png"
               className="endorser-image"
               alt="endorser-image"
             />
