@@ -3,10 +3,10 @@ import React from "react";
 function About() {
   return (
     <>
-      <div className="about-container">
+      <div className="about-container" id="about">
         <h2>How it Started</h2>
         <div className="about-inner-container">
-          <div classname="about-text-container">
+          <div className="about-text-container">
             <p>
               Hailing from the United Kingdom and entrenched in the tech
               recruitment domain, my journey has been one of innovation and

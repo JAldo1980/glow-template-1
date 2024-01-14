@@ -445,7 +445,7 @@ textarea {
   .hero-image-container {
     position: absolute;
     bottom: 0;
-    right: 00;
+    right: 0;
     margin-bottom: 20px; /* Adjust as needed to provide some space from the bottom */
     margin-right: 20px; /* Adjust as needed to provide some space from the right */
     z-index: 1000;
@@ -481,7 +481,7 @@ textarea {
   .hero-image-container {
     position: absolute;
     bottom: 0;
-    right: 00;
+    right: 0;
     margin-bottom: 20px; /* Adjust as needed to provide some space from the bottom */
     margin-right: 20px; /* Adjust as needed to provide some space from the right */
     z-index: 1000;
@@ -547,7 +547,7 @@ textarea {
   /* HERO SECTION */
 
   .headline-name {
-    font-size: 4.5rem;
+    font-size: 5rem;
   }
 
   .hero-container {
@@ -559,7 +559,7 @@ textarea {
   .hero-image-container {
     position: absolute;
     bottom: 0;
-    right: 00;
+    right: 0;
     margin-bottom: 20px; /* Adjust as needed to provide some space from the bottom */
     margin-right: 20px; /* Adjust as needed to provide some space from the right */
     z-index: 1000;
@@ -647,7 +647,7 @@ textarea {
   .hero-image-container {
     position: absolute;
     bottom: 0;
-    right: 00;
+    right: 0;
     margin-bottom: 20px;
     margin-right: 20px;
     z-index: 1000;

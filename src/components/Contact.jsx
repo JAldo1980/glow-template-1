@@ -4,7 +4,7 @@ import ContactForm from "./ContactForm";
 function Contact() {
   return (
     <>
-      <div className="contact-container">
+      <div className="contact-container" id="contact">
         <h2>Let's Connect</h2>
         <ContactForm />
       </div>
