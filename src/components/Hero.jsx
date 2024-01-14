@@ -18,7 +18,7 @@ function Hero() {
 
         <div className="hero-image-container">
           <img
-            src="./src/images/hero-img-new.png"
+            src="./glow-template-1/src/images/hero-img-new.png"
             className="hero-img"
             alt="hero-image"
           />
