@@ -36,37 +36,31 @@ function About() {
             </p>
           </div>
           <div className="about-image-container">
-            <img
-              className="about-image"
-              src="./src/images/person-img.png"
-              alt=""
-            />
+            <img className="about-image" src="/public/person-img.png" alt="" />
           </div>
         </div>
 
         <div className="benefit-links">
           <ScrollLink
             activeClass="active"
-            to="results" 
+            to="results"
             spy={true}
             smooth={true}
-            offset={-70} 
+            offset={-70}
             duration={500}
           >
             My Results
           </ScrollLink>
           <ScrollLink
             activeClass="active"
-            to="faq" 
+            to="faq"
             spy={true}
             smooth={true}
-            offset={-70} 
+            offset={-70}
             duration={500}
           >
             Frequently Asked Questions
           </ScrollLink>
-
-         
         </div>
       </div>
     </>
