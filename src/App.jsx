@@ -7,7 +7,7 @@ import About from "./components/About";
 import Endorsements from "./components/Endorsements";
 import Benefits from "./components/Benefits";
 import Results from "./components/Results";
-import FAQ from "./components/FAQ";
+import Faq from "./components/Faq";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 
@@ -34,7 +34,7 @@ function App() {
         <Endorsements />
       </ContainerTwo>
       <Container>
-        <FAQ />
+        <Faq />
         <Contact />
       </Container>
       <div className="buffer"></div>

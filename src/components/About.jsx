@@ -47,27 +47,26 @@ function About() {
         <div className="benefit-links">
           <ScrollLink
             activeClass="active"
-            to="results" // Provide the ID of the target section
+            to="results" 
             spy={true}
             smooth={true}
-            offset={-70} // Adjust the offset as needed
+            offset={-70} 
             duration={500}
           >
             My Results
           </ScrollLink>
           <ScrollLink
             activeClass="active"
-            to="faq" // Provide the ID of the target section
+            to="faq" 
             spy={true}
             smooth={true}
-            offset={-70} // Adjust the offset as needed
+            offset={-70} 
             duration={500}
           >
             Frequently Asked Questions
           </ScrollLink>
 
-          {/* <a href="">My Results</a>
-          <a href="">Frequently Asked Questions</a> */}
+         
         </div>
       </div>
     </>

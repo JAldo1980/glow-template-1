@@ -2,7 +2,7 @@
 import React from "react";
 import AccordionItem from "./AccordionItem";
 
-const FAQ = () => {
+const Faq = () => {
   const faqData = [
     {
       title: "How do you ensure access to top tech talent?",
@@ -49,4 +49,4 @@ const FAQ = () => {
   );
 };
 
-export default FAQ;
+export default Faq;
