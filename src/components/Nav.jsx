@@ -8,7 +8,7 @@ function Nav() {
         <img
           className="logo-img"
           alt="branding-image"
-          src="/src/images/logo-placeholder.png"
+          src="logo-placeholder.png"
         ></img>
         <div className="nav-items">
           <Link
