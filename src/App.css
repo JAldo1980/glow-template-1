@@ -421,6 +421,10 @@ textarea {
   color: white;
 }
 
+.footer-container p {
+  margin-top: 0.5em;
+}
+
 .footer-socials {
   margin-top: 0.5em;
   display: flex;
