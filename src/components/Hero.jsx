@@ -18,7 +18,11 @@ function Hero() {
 
         <div className="hero-image-container">
           <img
+<<<<<<< HEAD
             src="/public/hero-img-new.png"
+=======
+            src="src/images/hero-img-new.png"
+>>>>>>> origin/main
             className="hero-img"
             alt="hero-image"
           />
