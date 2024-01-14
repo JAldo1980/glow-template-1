@@ -1,4 +1,5 @@
 import React from "react";
+import { Link as ScrollLink } from "react-scroll";
 
 function About() {
   return (
@@ -44,8 +45,29 @@ function About() {
         </div>
 
         <div className="benefit-links">
-          <a href="">My Results</a>
-          <a href="">Frequently Asked Questions</a>
+          <ScrollLink
+            activeClass="active"
+            to="results" // Provide the ID of the target section
+            spy={true}
+            smooth={true}
+            offset={-70} // Adjust the offset as needed
+            duration={500}
+          >
+            My Results
+          </ScrollLink>
+          <ScrollLink
+            activeClass="active"
+            to="faq" // Provide the ID of the target section
+            spy={true}
+            smooth={true}
+            offset={-70} // Adjust the offset as needed
+            duration={500}
+          >
+            Frequently Asked Questions
+          </ScrollLink>
+
+          {/* <a href="">My Results</a>
+          <a href="">Frequently Asked Questions</a> */}
         </div>
       </div>
     </>

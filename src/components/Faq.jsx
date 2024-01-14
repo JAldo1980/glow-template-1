@@ -40,7 +40,7 @@ const FAQ = () => {
   ];
 
   return (
-    <div className="faq-container">
+    <div className="faq-container" id="faq">
       <h2>Frequently Asked Questions</h2>
       {faqData.map((item, index) => (
         <AccordionItem key={index} title={item.title} content={item.content} />

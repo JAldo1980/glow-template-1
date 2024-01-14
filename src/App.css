@@ -401,6 +401,12 @@ textarea {
   cursor: pointer;
 }
 
+/* form error styling */
+
+.error-message {
+  color: var(--highlight-text);
+}
+
 /* ****** */
 /* FOOTER */
 /* ****** */
@@ -560,14 +566,14 @@ textarea {
     position: absolute;
     bottom: 0;
     right: 0;
-    margin-bottom: 20px; /* Adjust as needed to provide some space from the bottom */
-    margin-right: 20px; /* Adjust as needed to provide some space from the right */
+    margin-bottom: 20px;
+    margin-right: 20px;
     z-index: 1000;
   }
 
   .hero-img {
-    width: 80%; /* Increase the width of the image to make it overflow the container */
-    margin-left: 45%; /* Center the overflowed content by adjusting margins */
+    width: 80%;
+    margin-left: 45%;
     margin-bottom: -10%;
     z-index: 1000;
   }
@@ -637,7 +643,6 @@ textarea {
 /* DESKTOPS */
 @media (min-width: 1200px) and (max-width: 1919px) {
   /* HERO SECTION */
-
   .hero-container {
     display: flex;
     align-items: flex-start;
@@ -647,7 +652,7 @@ textarea {
   .hero-image-container {
     position: absolute;
     bottom: 0;
-    right: 0;
+    right: -40px;
     margin-bottom: 20px;
     margin-right: 20px;
     z-index: 1000;
@@ -655,7 +660,7 @@ textarea {
 
   .hero-img {
     width: 130%;
-    margin-left: 25%;
+    margin-left: 15%;
     margin-bottom: -10%;
     z-index: 1000;
   }
@@ -743,6 +748,7 @@ textarea {
 @media (min-width: 1920px) {
   /* HERO SECTION */
 
+  /* HERO SECTION */
   .hero-container {
     display: flex;
     align-items: flex-start;
@@ -752,7 +758,7 @@ textarea {
   .hero-image-container {
     position: absolute;
     bottom: 0;
-    right: 00;
+    right: 0;
     margin-bottom: 20px;
     margin-right: 20px;
     z-index: 1000;
@@ -764,6 +770,7 @@ textarea {
     margin-bottom: -10%;
     z-index: 1000;
   }
+
   /* NAV SECTION */
   .nav-container {
     flex-direction: row;
