@@ -18,7 +18,7 @@ function Hero() {
 
         <div className="hero-image-container">
           <img
-            src="./images/hero-img-new.png"
+            src="/images/hero-img-new.png"
             className="hero-img"
             alt="hero-image"
           />
