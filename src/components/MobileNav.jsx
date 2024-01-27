@@ -1,15 +1,18 @@
 import React from "react";
 import { Link } from "react-scroll";
 
-function Nav() {
+function MobileNav() {
   return (
     <>
-      <div className="nav-container">
+      <div className="mobile-nav-container">
         <img
           className="logo-img"
           alt="branding-image"
           src="logo-long.png"
         ></img>
+        <div className="mobile-title">
+          <h1>Build The Portfolio You've Always Wanted</h1>
+        </div>
 
         <div className="nav-items">
           <Link
@@ -57,13 +60,10 @@ function Nav() {
           <a href="https://www.instagram.com/jamesdoesmarketing/">
             <img src="instagram-symbol.png" className="social-icon" />
           </a>
-          <a href="https://www.tiktok.com/@portfolio_reviews">
-            <img src="tik-tok.png" className="social-icon" />
-          </a>
         </div>
       </div>
     </>
   );
 }
 
-export default Nav;
+export default MobileNav;

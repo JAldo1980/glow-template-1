@@ -2,10 +2,11 @@ import React from "react";
 import Container from "./components/Container";
 import ContainerTwo from "./components/ContainerTwo";
 import Nav from "./components/Nav";
+import MobileNav from "./components/MobileNav";
 import Hero from "./components/Hero";
 import About from "./components/About";
-import Endorsements from "./components/Endorsements";
-import Benefits from "./components/Benefits";
+import TemplateInfo from "./components/TemplateInfo";
+import CourseIntro from "./components/CourseIntro";
 import Results from "./components/Results";
 import Faq from "./components/Faq";
 import Contact from "./components/Contact";
@@ -19,19 +20,20 @@ function App() {
     <>
       <Container>
         <Nav />
+        <MobileNav />
         <Hero />
       </Container>
       <ContainerTwo>
         <About />
       </ContainerTwo>
       <Container>
-        <Benefits />
+        <CourseIntro />
       </Container>
       <Container>
         <Results />
       </Container>
       <ContainerTwo>
-        <Endorsements />
+        <TemplateInfo />
       </ContainerTwo>
       <Container>
         <Faq />

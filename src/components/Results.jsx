@@ -4,7 +4,7 @@ function Results() {
   return (
     <>
       <div className="results-container" id="results">
-        <h2 className="results-headline">Results Proven</h2>
+        <h2 className="results-headline">My Endorsements</h2>
         <div className="results-inner-container">
           <div className="result-detail">
             <h4>

@@ -1,11 +1,11 @@
 import React from "react";
 
 // KNOWN AS THE IMPACT SECTION
-function Endorsments() {
+function TemplateInfo() {
   return (
     <>
       <div className="endorsement-container">
-        <h2>Happy Clients</h2>
+        <h2>Portfolio Templates</h2>
         {/* IMAGE RIGHT */}
         <div className="endorsement-card">
           <div className="quote">
@@ -51,4 +51,4 @@ function Endorsments() {
   );
 }
 
-export default Endorsments;
+export default TemplateInfo;

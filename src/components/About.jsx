@@ -5,38 +5,43 @@ function About() {
   return (
     <>
       <div className="about-container" id="about">
-        <h2>How it Started</h2>
+        <h2>What I'll Do For You</h2>
         <div className="about-inner-container">
           <div className="about-text-container">
             <p>
-              Hailing from the United Kingdom and entrenched in the tech
-              recruitment domain, my journey has been one of innovation and
-              entrepreneurship.
+              Deeply rooted in the realm of marketing, my focus lies in
+              empowering YOU, the digital marketer, to craft not just any
+              digital marketing portfolio but one that propels you above the
+              competition in this fiercely competitive market.
             </p>
             <br />
             <p>
-              My mission is clear: to seamlessly bridge top-tier tech talent
-              with pioneering opportunities, reshaping professional trajectories
-              and influencing the future of technology.
+              My mission is crystal clear: to guide and support digital
+              marketers in building the digital marketing portfolios you not
+              only want but, more crucially, NEED to establish a foothold in
+              marketing.
             </p>
             <br />
             <p>
-              My passion extends to the cultivation of diverse, high-performing
-              teams — a cornerstone of my commitment to advancing the tech
-              industry. A fervent advocate for career elevation, I am driven by
-              the belief that success is not only achieved individually but
-              through collaborative efforts.
+              As a dedicated advocate for career empowerment, I firmly believe
+              that as a digital marketer you need a portfolio to help you stand
+              out - and that's what I am going to help you do.
             </p>
             <br />
             <p>
-              Let's embark on this journey together, navigating the dynamic
-              landscape of tech recruitment, and shaping a future where
-              diversity thrives. Join me in transforming careers and making an
-              indelible mark on the tech industry.
+              Join me in the pursuit of standing out, making your mark, and
+              elevating your career in the ever-evolving world of digital
+              marketing.
             </p>
+            <br />
+            <p>Let's build!</p>
           </div>
           <div className="about-image-container">
-            <img className="about-image" src="person-img.png" alt="" />
+            <img
+              className="about-image"
+              src="james-hero-img.png"
+              alt="James Alderman"
+            />
           </div>
         </div>
 
@@ -49,7 +54,7 @@ function About() {
             offset={-70}
             duration={500}
           >
-            My Results
+            Endorsements
           </ScrollLink>
           <ScrollLink
             activeClass="active"
