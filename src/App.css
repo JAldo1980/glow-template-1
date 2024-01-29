@@ -169,35 +169,6 @@ h4.book-call-btn {
   background-color: white;
 }
 
-.endorsement-card {
-  margin-top: 1em;
-  padding: 0.5em;
-  width: 100%;
-  display: flex;
-  gap: 2em;
-  /* background-color: var(--highlight-text); */
-  border-radius: 10px;
-}
-
-.quote h4 {
-  color: var(--quote-color);
-}
-
-.endorser-container {
-  display: flex;
-  flex-direction: column;
-}
-
-.endorser-details {
-  margin-top: 0.5em;
-  font-size: 0.8rem;
-}
-
-.endorser-image {
-  border-radius: 50%;
-  max-width: 100px;
-}
-
 /* ******** */
 /* RESULTS */
 /* ******* */
@@ -628,24 +599,6 @@ textarea {
   .endorsement-container h2 {
     font-size: 3rem;
   }
-  .quote h4 {
-    font-size: 1.2rem;
-  }
-  /* FAQ SECTION */
-  .faq-container h2 {
-    font-size: 3rem;
-  }
-  .accordion-header h3 {
-    font-size: 1.2rem;
-  }
-  /* CONTACT SECTION */
-  .contact-container H2 {
-    font-size: 3rem;
-    padding-bottom: 0.5em;
-  }
-  .label-style {
-    font-size: 1.2rem;
-  }
 }
 
 /* LARGE TABLETS / LAPTOPS */
@@ -729,30 +682,6 @@ textarea {
   /* ENDORSMENT SECTION */
   .endorsement-container h2 {
     font-size: 3rem;
-  }
-  .quote h4 {
-    font-size: 1.3rem;
-  }
-  .endorser-details h5 {
-    font-size: 1.1rem;
-  }
-  /* FAQ SECTION */
-  .faq-container h2 {
-    font-size: 3rem;
-  }
-  .accordion-header h3 {
-    font-size: 1.3rem;
-  }
-  .accordion-content {
-    font-size: 1.3rem;
-  }
-  /* CONTACT SECTION */
-  .contact-container H2 {
-    font-size: 3rem;
-    padding-bottom: 0.5em;
-  }
-  .label-style {
-    font-size: 1.3rem;
   }
 }
 
@@ -967,29 +896,5 @@ textarea {
   /* ENDORSMENT SECTION */
   .endorsement-container h2 {
     font-size: 3rem;
-  }
-  .quote h4 {
-    font-size: 1.3rem;
-  }
-  .endorser-details h5 {
-    font-size: 1.1rem;
-  }
-  /* FAQ SECTION */
-  .faq-container h2 {
-    font-size: 3rem;
-  }
-  .accordion-header h3 {
-    font-size: 1.3rem;
-  }
-  .accordion-content {
-    font-size: 1.3rem;
-  }
-  /* CONTACT SECTION */
-  .contact-container H2 {
-    font-size: 3rem;
-    padding-bottom: 0.5em;
-  }
-  .label-style {
-    font-size: 1.3rem;
   }
 }

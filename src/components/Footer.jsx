@@ -24,7 +24,8 @@ function Footer() {
         </div>
         <p>
           Portfolio Forge | James Alderman © 2024 | Part of The Alderman
-          Technology Group Limited (ATG) | All Rights Reserved
+          Technology Group Limited (ATG) Company number: 15450508 | All Rights
+          Reserved
         </p>
       </div>
     </>
